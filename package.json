@@ -1,0 +1,21 @@
+{
+  "name": "odin-linked-list",
+  "version": "1.0.0",
+  "description": "Implement linked list using javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KrunalDarekar/odin-linked-list.git"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KrunalDarekar/odin-linked-list/issues"
+  },
+  "homepage": "https://github.com/KrunalDarekar/odin-linked-list#readme"
+}
