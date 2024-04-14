@@ -43,6 +43,7 @@ const linkedList = () => {
             return "no elements in the list";
         } else if (curNode === null) {
             head = null;
+            size--;
         } else {
             let nextNode = curNode.nextNode;
             if(nextNode === null) {
@@ -55,13 +56,19 @@ const linkedList = () => {
                 }
                 prevNode.nextNode = null;
             }
+            size--
         }
     }
 
     const remove = (index) => {
         let curNode = head;
+        if(index >= size) {
+            return false
+        }
+        size--;
         if(index === 0) {
             head = curNode.nextNode
+            return true
         }
         let prevNode;
         for(let i = 0; i < index; i++) {
@@ -70,9 +77,11 @@ const linkedList = () => {
         }
         if(curNode.nextNode) {
             prevNode.nextNode = curNode.nextNode
+            return true
         } else {
             prevNode.nextNode = null
             tail = prevNode
+            return false
         }
     }
 
@@ -134,7 +143,8 @@ const linkedList = () => {
         contains,
         find,
         toString,
-        replace
+        replace,
+        remove,
     }
 };
 
