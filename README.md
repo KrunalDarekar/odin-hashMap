@@ -1,2 +1,2 @@
-# odin-linked-list
-Implement linked list using javascript
+# odin-hashMap
+Implement a hashMap using javascript
