@@ -1,7 +1,7 @@
 {
-  "name": "odin-linked-list",
+  "name": "odin-hashmap",
   "version": "1.0.0",
-  "description": "Implement linked list using javascript",
+  "description": "Implement a hashMap using javascript",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

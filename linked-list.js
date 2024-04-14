@@ -58,6 +58,24 @@ const linkedList = () => {
         }
     }
 
+    const remove = (index) => {
+        let curNode = head;
+        if(index === 0) {
+            head = curNode.nextNode
+        }
+        let prevNode;
+        for(let i = 0; i < index; i++) {
+            prevNode = curNode
+            curNode = curNode.nextNode
+        }
+        if(curNode.nextNode) {
+            prevNode.nextNode = curNode.nextNode
+        } else {
+            prevNode.nextNode = null
+            tail = prevNode
+        }
+    }
+
     const contains = (value) => {
         let curNode = head;
         while(curNode != null) {
@@ -80,6 +98,14 @@ const linkedList = () => {
             index++;
         }
         return null;
+    }
+
+    const replace = (index, value) => {
+        let curNode = head;
+        for(let i = 0; i < index; i++) {
+            curNode = curNode.nextNode
+        }
+        curNode.value = value
     }
 
     const toString = () => {
@@ -107,7 +133,8 @@ const linkedList = () => {
         pop,
         contains,
         find,
-        toString
+        toString,
+        replace
     }
 };
 
